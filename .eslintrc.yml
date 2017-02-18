@@ -1,0 +1,23 @@
+parser: babel-eslint
+extends:
+  - airbnb
+  - plugin:flowtype/recommended
+plugins:
+  - react
+  - jsx-a11y
+  - import
+  - flowtype
+env:
+  browser: true
+rules:
+  global-require: 0
+  import/no-extraneous-dependencies:
+    - error
+    - devDependencies: true
+  react/jsx-filename-extension:
+    - 1
+    - extensions:
+      - .js
+      - .jsx
+settings:
+  import/resolver: webpack
