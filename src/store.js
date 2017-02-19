@@ -4,7 +4,7 @@ import rootReducer from 'ducks/reducers';
 
 const { devToolsExtension } = window;
 
-export default function configureStore(initialState?: ?Object, middlewares: Array<any>) {
+export default function configureStore(initialState?: Object, middlewares: Array<any>) {
   const middleware = applyMiddleware(...middlewares);
   const composed = compose(
     middleware,
